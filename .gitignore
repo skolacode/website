@@ -21,3 +21,7 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# htaccess and well known - well know i not sure is what folder
+.htaccess
+.well-known
