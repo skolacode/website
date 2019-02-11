@@ -1,5 +1,5 @@
 ---
-title: 'Business Advisory'
+title: 'Laravel'
 image: '/services/default.png'
 ---
 

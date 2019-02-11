@@ -1,5 +1,5 @@
 ---
-title: 'Business Sales'
+title: 'Online Resume'
 image: '/services/default.png'
 ---
 
