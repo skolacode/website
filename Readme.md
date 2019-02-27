@@ -8,15 +8,24 @@ This repo will be a gret stepping stone if you want to build a cool and neat web
 
 ## Get Boiler Plate
 
-CLick at branch and choose a v0.0 tag, clone it and enjoy.
+Click at branch, select tag tab and select the tag with boilerplate-vXX tag.
+1. e.g: boilerplate-v1.0
+2. They will be few tag for boiler plate, choose the latest one
 
 ## Boiler Plate Features
 
-1. axios - for API
+1. axios - for handle API
 2. react-cookies - for store cookies
 3. unstated - handle state managment
 4. react-router-dom - handle route management
 5. UI Framework, I leave it to you guys to decide
+6. Google Analytics - use it with react-ga
+
+## Code Commenting Style
+
+1. '**', this code need to be deleted
+2. '>', indicate where I get this knowledge / refer from
+3. 'TODO:' the todo jobs that need to be done
 
 ## Learn More
 
