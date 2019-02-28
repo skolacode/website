@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
+import { Navbar, Border } from '../styles/LandingPageStyle'
 
-export default class LandingPage extends Component {
-  state = {}
+export default class MenuExampleSecondary extends Component {
+  state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
@@ -10,27 +11,34 @@ export default class LandingPage extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu>
-        <Menu.Item
-          name='editorials'
-          active={activeItem === 'editorials'}
-          onClick={this.handleItemClick}
-        >
-          Editorials
-        </Menu.Item>
+      <React.Fragment>
+        <Navbar>
+          <Menu secondary size='massive'>
+            <Menu.Item 
+              name='SkolaCode' 
+              onClick={this.handleItemClick} 
+            />
+            
+            
+            <Menu.Menu position='right'>
+              <Menu.Item
+                name='Courses'
+                active={activeItem === 'logout'}
+                onClick={this.handleItemClick}
+              />
+              <Menu.Item
+                name='Events'
+                active={activeItem === 'logout'}
+                onClick={this.handleItemClick}
+              />
+            </Menu.Menu>
 
-        <Menu.Item name='reviews' active={activeItem === 'reviews'} onClick={this.handleItemClick}>
-          Reviews
-        </Menu.Item>
 
-        <Menu.Item
-          name='upcomingEvents'
-          active={activeItem === 'upcomingEvents'}
-          onClick={this.handleItemClick}
-        >
-          Upcoming Events
-        </Menu.Item>
-      </Menu>
+          </Menu>
+        </Navbar>
+        
+        <Border />
+      </React.Fragment>
     )
   }
 }
