@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 import { Menu, Grid, Container } from 'semantic-ui-react'
-import { Navbar, Border, BannerSection, LeftGrid, RigthGrid } from '../../styles/LandingPageStyle'
+import { 
+  Navbar, Border, BannerSection, LeftGridTitleContainer, LeftGridTitle, RigthGrid 
+} from '../../styles/LandingPageStyle'
+import Posts from './Layout/Posts';
+
+
 
 // TODO: 
 // need to design the structure of the folder and child nicely
@@ -18,7 +23,7 @@ export default class MenuExampleSecondary extends Component {
     return (
       <React.Fragment>
         <Navbar>
-          <Menu text size="massive" stackable="true">
+          <Menu text size="massive" stackable={true}>
             <Menu.Item 
               name='SkolaCode' 
               onClick={this.handleItemClick} 
@@ -42,23 +47,27 @@ export default class MenuExampleSecondary extends Component {
         <Border />
 
         <BannerSection>
-          Image will be here
+          Image / Banner will be here
         </BannerSection>
 
         <Container>
-          <div class="ui stackable four column grid">
-              <Grid.Column width={10}>
-            <LeftGrid>
-                <h1>Stories</h1>
-            </LeftGrid>
-              </Grid.Column>
+          <Grid>
+            <Grid.Column width={11}>
 
-              <Grid.Column width={5}>
-            <RigthGrid>
+              <LeftGridTitleContainer>
+                <LeftGridTitle>
+                  Stories
+                </LeftGridTitle>
+              </LeftGridTitleContainer>
+              <Posts />
+            </Grid.Column>
+
+            <Grid.Column width={4}>
+              <RigthGrid>
                 <h1>Courses</h1>
-            </RigthGrid>
-              </Grid.Column>
-          </div>
+              </RigthGrid>
+            </Grid.Column>
+          </Grid>
         </Container>
 
       </React.Fragment>

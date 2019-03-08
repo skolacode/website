@@ -15,22 +15,40 @@ const Border = styled.div`
 
 const BannerSection = styled.div `
   height: 300px;
-  /* background-color: lightgreen */
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
-const LeftGrid = styled.div`
-  text-align: center;
+// TODO: check if this left and right grid style same or not, if same merge it to one style
+const LeftGridTitleContainer = styled.div`
+  border-bottom: #eeeeee;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+`;
+
+const LeftGridTitle = styled.p`
+  font-size: 28px;
+  font-weight: 500;
+  font-family: sans-serif;
 `;
 
 const RigthGrid = styled.div`
   text-align: center;
 `;
 
+const PostContainer = styled.div`
+  height: 180px;
+`;
+
 export {
   Navbar,
   Border,
   BannerSection,
-  LeftGrid,
+  LeftGridTitleContainer,
+  LeftGridTitle,
   RigthGrid,
+  PostContainer,
 }
