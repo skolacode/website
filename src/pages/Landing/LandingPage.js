@@ -20,29 +20,6 @@ export default class MenuExampleSecondary extends Component {
 
     return (
       <React.Fragment>
-        <Navbar>
-          <Menu text size="massive" stackable={true}>
-            <Menu.Item 
-              name='SkolaCode' 
-              onClick={this.handleItemClick} 
-            />
-
-            <Menu.Menu position='right'>
-              <Menu.Item
-                name='courses'
-                // active={activeItem === 'courses'}
-                onClick={this.handleItemClick}
-              />
-              <Menu.Item
-                name='events'
-                // active={activeItem === 'events'}
-                onClick={this.handleItemClick}
-              />
-            </Menu.Menu>
-          </Menu>
-        </Navbar>
-        
-        <Border />
 
         <BannerSection>
           Image / Banner will be here
