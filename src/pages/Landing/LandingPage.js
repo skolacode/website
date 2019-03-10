@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Menu, Grid, Container } from 'semantic-ui-react'
 import { 
-  Navbar, Border, BannerSection, LeftGridTitleContainer, LeftGridTitle, RigthGrid 
+  Navbar, Border, BannerSection, LeftGridTitleContainer, LeftGridTitle, RigthGridTitle 
 } from '../../styles/LandingPageStyle'
-import Posts from './Layout/Posts';
+import { Posts, Courses } from './Layout';
 
 
 
@@ -17,8 +17,6 @@ export default class MenuExampleSecondary extends Component {
 
   render() {
     const { activeItem } = this.state
-
-    console.log('active: ', activeItem)
 
     return (
       <React.Fragment>
@@ -59,14 +57,20 @@ export default class MenuExampleSecondary extends Component {
                   Stories
                 </LeftGridTitle>
               </LeftGridTitleContainer>
+              
               <Posts />
             </Grid.Column>
 
             <Grid.Column width={4}>
-              <RigthGrid>
-                <h1>Courses</h1>
-              </RigthGrid>
+              <LeftGridTitleContainer>
+                <RigthGridTitle>
+                  Courses
+                </RigthGridTitle>
+              </LeftGridTitleContainer>
+
+              <Courses />
             </Grid.Column>
+
           </Grid>
         </Container>
 

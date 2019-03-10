@@ -35,11 +35,17 @@ const LeftGridTitle = styled.p`
   font-family: sans-serif;
 `;
 
-const RigthGrid = styled.div`
-  text-align: center;
+const RigthGridTitle = styled.p`
+  font-size: 28px;
+  font-weight: 500;
+  font-family: sans-serif;
 `;
 
 const PostContainer = styled.div`
+  height: 180px;
+`;
+
+const CoursesContainer = styled.div`
   height: 180px;
 `;
 
@@ -49,6 +55,7 @@ export {
   BannerSection,
   LeftGridTitleContainer,
   LeftGridTitle,
-  RigthGrid,
+  RigthGridTitle,
   PostContainer,
+  CoursesContainer,
 }
