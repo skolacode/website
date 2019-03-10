@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Image, Grid } from 'semantic-ui-react'
-import { PostContainer } from '../../../styles/LandingPageStyle'
+import { PostContainer, PublisedInfoText } from '../../../styles/LandingPageStyle'
 
 class Posts extends React.PureComponent {
   render() {
@@ -22,6 +22,10 @@ class Posts extends React.PureComponent {
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 Aenean massa strong. 
               </p>
+
+              <div>
+                <PublisedInfoText>Jan 10, 2019 | 5 min read</PublisedInfoText>
+              </div>
             </Grid.Column>
           </Grid>
         </PostContainer>

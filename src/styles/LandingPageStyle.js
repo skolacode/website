@@ -49,6 +49,11 @@ const CoursesContainer = styled.div`
   height: 180px;
 `;
 
+const PublisedInfoText = styled.p`
+  color: #b2b2b2;
+  font-size: 12px;
+`;
+
 export {
   Navbar,
   Border,
@@ -58,4 +63,5 @@ export {
   RigthGridTitle,
   PostContainer,
   CoursesContainer,
+  PublisedInfoText,
 }
